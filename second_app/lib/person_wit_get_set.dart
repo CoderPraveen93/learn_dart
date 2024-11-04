@@ -6,7 +6,7 @@ class PersonWitGetSet {
     _name = name;
   }
 
-  Map<String, dynamic> get getName {
+   get getName {
     return {"name": _name};
   }
 
@@ -18,10 +18,13 @@ class PersonWitGetSet {
     }
   }
 
-  get getAge {
-    return _age;
+ get getAge {
+    return {"age":_age};
   }
-
-
- 
+  // set setName(String name) {
+  //   _name = name;
+  // }
+  // get getName{
+  //   return _name;
+  // }
 }

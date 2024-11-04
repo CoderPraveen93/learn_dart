@@ -126,6 +126,7 @@ The second and third constructors are named constructors.
 
 //   Person.fromJsonString(String jsonString) {
 //     Map<String, dynamic> json = jsonDecode(jsonString);
+//     print("lllll"+json.toString());
 //     name = json['name'];
 //     age = json['age'];
 //   }
@@ -137,16 +138,16 @@ The second and third constructors are named constructors.
 //   String jsonString2 = '{"name": "John", "age": 30}';
 //   Map<String, dynamic> map = {"name": "John", "age": 30};
 //   Person p1 = Person.fromJsonString(jsonString1);
-//   // print("Person 1 name: ${p1.name}");
+//   print("Person 1 name: ${p1.name}");
 //   // print("Person 1 age: ${p1.age}");
 
 //   // Person p2 = Person.fromJsonString(jsonString2);
 //   // print("Person 2 name: ${p2.name}");
 //   // print("Person 2 age: ${p2.age}");
 
-//   Person p3 = Person.fromJson(map);
-//   print(p3.age);
-//   print(p3.name);
+//   // Person p3 = Person.fromJson(map);
+//   //  print(Person.fromJson(map).age);
+//   // print( p3);
 // }
 
 /*Try to create a class Car with three properties name, color, and price and one method display
@@ -252,13 +253,16 @@ It helps you control your program and prevent it from becoming too complicated. 
 
 // void main() {
 //   PersonWitGetSet personWitGetSet = PersonWitGetSet();
-//   // personWitGetSet.setName = "Praveen";
+//   personWitGetSet.setName = "Praveen";
 
 //   // personWitGetSet.getName.forEach(
 //   //   (key, value) => print("$key : $value"),
 //   // );
-//   personWitGetSet.setAge = 0;
-//   print(personWitGetSet.getAge);
+//   // personWitGetSet.setAge = 2;
+//   // print(personWitGetSet.getAge);
+ 
+   
+//   print(personWitGetSet.getAge["age"]=4.0);
 // }
 
 //! unOther example of setter and  getter method
@@ -290,25 +294,25 @@ It helps you control your program and prevent it from becoming too complicated. 
 
 //! example 1
 
-// class Laptop {
-//   // Constructor
-//   Laptop(String name, String color) {
-//     print("Laptop constructor");
-//     print("Name: $name");
-//     print("Color: $color");
-//   }
-// }
+class Laptop {
+  // Constructor
+  Laptop(String name, String color) {
+    print("Laptop constructor");
+    print("Name: $name");
+    print("Color: $color");
+  }
+}
 
-// class MacBook extends Laptop {
-//   // Constructor
-//   MacBook(String name, String color) : super(name, color) {
-//     print("MacBook constructor");
-//   }
-// }
+class MacBook extends Laptop {
+  // Constructor
+  MacBook(String name, String color) : super(name, color) {
+    print("MacBook constructor");
+  }
+}
 
-// void main() {
-//   var macbook = MacBook("MacBook Pro", "Silver");
-// }
+void main() {
+  var macbook = MacBook("MacBook Pro", "Silver");
+}
 
 //! example 2
 // class Laptop {

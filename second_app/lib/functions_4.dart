@@ -233,7 +233,7 @@
 //   int exponent = 2;
 //   int pow = 1;
 //   for (int i = 1; i <= exponent; i++) {
-//     pow = base * exponent;
+//     pow = base * pow;
 //   }
 //   print("$base^$exponent = $pow");
 // }
@@ -335,3 +335,96 @@
 //   print("hello ${greet("john")}");
 // }
 
+//! 5. Write a program in Dart that find the area of a circle using function. Formula: pi * r * r
+
+// double areaOfCircle(int r) {
+//   double areaOfCircle = 3.14 * r * r;
+//   return areaOfCircle;
+// }
+
+// void main() {
+//   print("area of circle = ${areaOfCircle(5)}");
+// }
+
+//! 6. Write a program in Dart to reverse a String using function.
+
+// String reverseString(String name) {
+//   return name.split("").reversed.join();
+// }
+
+// void main() {
+//   print("reverse of string = ${reverseString("12345")}");
+// }
+
+//! 7. Write a program in Dart to calculate power of a certain number. For e.g 5^3=125.
+
+// int calculatePower({required int num1, required int num2}) {
+//   int pow = 1;
+//   for (int i = 1; i <= num2; i++) {
+//      pow  = pow*num1;
+//   }
+//   return pow;
+// }
+
+// void main() {
+//   print(calculatePower(num1: 5,num2: 3));
+// }
+
+//! 8. Write a function in Dart named add that takes two numbers as arguments and returns their sum.
+
+// int sum(int num1, int num2) {
+//   return (num1 + num2);
+// }
+
+// void main() {
+//   print(sum(1, 3));
+// }
+
+//! 9. Write a function in Dart called maxNumber that takes three numbers as arguments and returns the largest number.
+
+// int maxNumber(int num1, int num2, int num3) {
+//   if (num1 > num2 && num1 > num3) {
+//     return num1;
+//   } else if (num2 > num1 && num2 > num3) {
+//     return num2;
+//   } else {
+//     return num3;
+//   }
+// }
+
+// void main() {
+//   print(maxNumber(11, 122, 13));
+// }
+
+//! 10. Write a function in Dart called isEven that takes a number as an argument and returns True if the number is even, and False otherwise.
+// bool isEven(int num) {
+//   if (num % 2 == 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// void main() {
+//   print(isEven(2));
+// }
+
+//! 11. Write a function in Dart called createUser with parameters name, age, and isActive, where isActive has a default value of true.
+
+// void createUser(String name, int age, [bool isActive = true]) {
+//   print("name = $name and age = $age and isActive = $isActive ");
+// }
+
+// void main() {
+//   createUser("praveen", 24);
+// }
+
+//! 12. Write a function in Dart called calculateArea that calculates the area of a rectangle. It should take length and width as arguments, with a default value of 1 for both. Formula: length * width.
+
+// int calculateArea(int length, [int width = 1]) {
+//   return length * width;
+// }
+
+// void main() {
+//   print(calculateArea(2,4));
+// }
