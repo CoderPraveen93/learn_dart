@@ -260,8 +260,7 @@ It helps you control your program and prevent it from becoming too complicated. 
 //   // );
 //   // personWitGetSet.setAge = 2;
 //   // print(personWitGetSet.getAge);
- 
-   
+
 //   print(personWitGetSet.getAge["age"]=4.0);
 // }
 
@@ -294,25 +293,47 @@ It helps you control your program and prevent it from becoming too complicated. 
 
 //! example 1
 
-class Laptop {
-  // Constructor
-  Laptop(String name, String color) {
-    print("Laptop constructor");
-    print("Name: $name");
-    print("Color: $color");
-  }
-}
+// class Laptop {
+//   // Constructor
+//   Laptop(String name, String color) {
+//     print("Laptop constructor");
+//     print("Name: $name");
+//     print("Color: $color");
+//   }
+// }
 
-class MacBook extends Laptop {
-  // Constructor
-  MacBook(String name, String color) : super(name, color) {
-    print("MacBook constructor");
-  }
-}
+// class MacBook extends Laptop {
+//   // Constructor
+//   MacBook(String name, String color) : super(name, color) {
+//     print("$name and $color");
+//   }
+// }
 
-void main() {
-  var macbook = MacBook("MacBook Pro", "Silver");
-}
+// void main() {
+//   var macbook = MacBook("MacBook Pro", "Silver");
+// }
+
+//! practice
+
+// class A {
+//   String? name;
+//   int? age;
+//   A(this.name, this.age);
+
+//   A.name2() {
+//     print("second");
+//   }
+// }
+
+// class B extends A {
+//   B(super.name,super.age);
+// }
+
+// void main() {
+//   B b = B("mohan",12);
+//   print(b.name);
+// }
+
 
 //! example 2
 // class Laptop {
@@ -348,7 +369,9 @@ void main() {
 
 // class Person {
 //   String name;
-//   Person(this.name);
+//   Person(this.name) {
+//     print("person name = $name");
+//   }
 // }
 
 // class Student extends Person {
