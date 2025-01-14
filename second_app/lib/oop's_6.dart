@@ -334,7 +334,6 @@ It helps you control your program and prevent it from becoming too complicated. 
 //   print(b.name);
 // }
 
-
 //! example 2
 // class Laptop {
 //   // Constructor
@@ -427,7 +426,6 @@ It helps you control your program and prevent it from becoming too complicated. 
 //   b.display();
 // }
 
-
 //!Super With Constructor In Dart
 
 // class Employee {
@@ -450,5 +448,59 @@ It helps you control your program and prevent it from becoming too complicated. 
 //   Manager manager = Manager("John", 25000.0);
 // }
 
+//!Polymorphism In Dart
+
+/* Poly means many and morph means forms. Polymorphism is the ability of an object to take on many forms.
+ As humans, we have the ability to take on many forms. We can be a student, a teacher,
+  a parent, a friend, and so on. Similarly, in object-oriented programming, 
+  polymorphism is the ability of an object to take on many forms. */
+
+//   class Animal {
+//   void eat() {
+//     print("Animal is eating");
+//   }
+// }
+
+// class Dog extends Animal {
+//   @override
+//   void eat() {
+//     print("Dog is eating");
+//   }
+// }
+
+// void main() {
+//   Animal animal = Animal();
+//   animal.eat();
+
+//   Dog dog = Dog();
+//   dog.eat();
+// }
+
+//! Static In Dart
+
+/* If you want to define a variable or method that is shared by all instances of a class,
+you can use the static keyword. Static members are accessed using the class name.
+It is used for memory management.*/
+
+// class A {
+//   static int a = 0;
+//   int b = 0;
+//   A() {
+//     a++;
+//     b++;
+//   }
+// }
+
+
+
+// void main() {
+//   A a1 = A();
+//   A a2 = A();
+
+ 
+//   print(A.a);
+
+  
+// }
 
 

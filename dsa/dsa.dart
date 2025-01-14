@@ -1,5 +1,5 @@
 //! 1. print this pattern which is given below
-//! did'nt solved.
+//! did'nt solve.
 /*A
   AB
   ABC

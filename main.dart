@@ -250,7 +250,7 @@
 
 // void main() {
 //   print(add(1, 2));
-//   print("my name is" + name(" Praveen"));
+//  name();
 
 // }
 
@@ -258,8 +258,8 @@
 //   return (a + b);
 // };
 
-// var name = (String name) {
-//   return name;
+// var name = () {
+// print("object");
 // };
 
 //! Lexical closures
@@ -1112,7 +1112,6 @@ abstract class A {
   void aaa() {
     print("aaa");
   }
-
 }
 
 class B extends A {
@@ -1390,7 +1389,6 @@ class B extends A {
 //   print(sum);
 // }
 
-
 //! important about map
 // void main() {
 //   Map map = {"name": "praveen", "address": "jaunpur"};
@@ -1404,5 +1402,6 @@ class B extends A {
 //   print(mapList[1]["name"]);
 // }
 
+//! Filter List Items
 
 
